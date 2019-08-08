@@ -1,6 +1,6 @@
 {
-  "name": "lizi",
-  "version": "1.0.1",
+  "name": "DEMO",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "server": "live-server ./ --port=8888",
     "c": "node build/create.js"
   },
-  "author": "Daniel",
+  "author": "MMS-Daniel",
   "license": "ISC",
   "private": true,
   "devDependencies": {
@@ -28,8 +28,6 @@
     "glob": "^7.1.3",
     "html-webpack-plugin": "^3.2.0",
     "html-withimg-loader": "^0.1.16",
-    "less": "^3.9.0",
-    "less-loader": "^4.1.0",
     "live-server": "^1.2.1",
     "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.11.0",
