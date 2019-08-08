@@ -14,7 +14,7 @@ let getHtmlConfig = function (name, chunks) {
 		template: `./src/pages/${name}/index.html`,
 		filename: `${name}.html`,
 		// favicon: './favicon.ico',
-		title: '爱的兑换券',
+		title: '页面名称',
 		inject: true,
 		hash: true, //开启hash  ?[hash]
 		chunks: chunks,
@@ -69,23 +69,7 @@ module.exports = {
 			paths: glob.sync(path.join(__dirname, "../src/pages/*/*.html"))
 		}),
 
-	],
-	// webpack4里面移除了commonChunksPulgin插件，放在了config.optimization里面,提取js， vendor名字可改
-	// optimization: {
-	// 	splitChunks: {
-	// 		cacheGroups: {
-	// 			vendor: {
-	// 				// test: /\.js$/,
-	// 				test: path.resolve(__dirname, '../node_modules'),
-	// 				chunks: "initial", //表示显示块的范围，有三个可选值：initial(初始块)、async(按需加载块)、all(全部块)，默认为all;
-	// 				name: "vendor", //拆分出来块的名字(Chunk Names)，默认由块名和hash值自动生成；
-	// 				minChunks: 1,
-	// 				reuseExistingChunk: true,
-	// 				enforce: true
-	// 			}
-	// 		}
-	// 	}
-	// },
+	]
 }
 
 
