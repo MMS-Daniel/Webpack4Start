@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/MMS-Daniel/Webpack4Start/src/images/logo.jpg)
+![![image]](https://raw.githubusercontent.com/MMS-Daniel/Webpack4Start/src/images/logo.jpg)
 
 webpack4 多入口，多页面项目构建案例。
 =====================================
