@@ -21,9 +21,6 @@ webpack4搭建纯静态页面型前端工程解决方案
 
 ``` js
     .
-    ├── .babelrc    # babel配置
-    ├── package.json              # 项目配置
-    ├── README.md                 # 项目说明
     ├── build                     # 配置规则
     │   ├── create.js                   # 动态创建Node语法
     │   ├── webpack.base.conf.js        # 工程基础配置
@@ -40,6 +37,9 @@ webpack4搭建纯静态页面型前端工程解决方案
     │   │   ├── api.js              # 基于Axios封装的接口文件
     │   │   ├── mobile.js           # 移动端rem计算js
     │   ├── page/               #页面文件
+    ├── .babelrc    # babel配置
+    ├── package.json              # 项目配置
+    ├── README.md                 # 说明
     ├── postcss.config.js              #CSS自动兼容配置
 
 ```
