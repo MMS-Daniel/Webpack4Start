@@ -1,5 +1,6 @@
 import axios from 'axios';
 import qs from 'qs';
+import {getUrlParam} from './utils/url'
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 axios.defaults.withCredentials = true;
 axios.interceptors.request.use(config => {
@@ -18,7 +19,9 @@ axios.interceptors.response.use(
     },
     error => {
 
-    })
+    }
+);
+
 
 export const Api = {
     Wx: {
@@ -49,14 +52,6 @@ export const Api = {
 
 };
 // 授权相关
-const getUrlParam = (key)=>{
-    var reg = new RegExp("(^|&)" + key + "=([^&]*)(&|$)"); // 构造一个含有目标参数的正则表达式对象
-    var r = window.location.search.substr(1).match(reg); // 匹配目标参数
-    if (r != null)
-        return unescape(r[2]);
-    return null; // 返回参数值
-}
-
 export const  Oauth ={
     // 获取微信授权code
     auth:function(callback){

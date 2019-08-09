@@ -1,3 +1,4 @@
+const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const devMode = process.env.NODE_ENV !== 'production'
 const rules = [{
@@ -14,6 +15,12 @@ const rules = [{
 			'css-loader',
 			'postcss-loader',
 			'sass-loader',
+            { loader: 'sass-resources-loader',
+                options: {
+                    sourceMap: true,
+                    resources:path.resolve(__dirname, "../src/assets/css/common.scss")
+                }
+            }
 		]
 	},
 	{
