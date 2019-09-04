@@ -19,7 +19,7 @@ const webpackConfigDev = {
         open: true, // 开启浏览器
         proxy: {
             '/api': {
-                target: "http://helper.test-mmsay.com",
+                target: "http://task.test-mmsay.com",
                 changeOrigin: true
             }
         }

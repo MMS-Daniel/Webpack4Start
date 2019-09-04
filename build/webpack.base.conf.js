@@ -14,8 +14,8 @@ let getHtmlConfig = function (name, chunks) {
 		template: `./src/pages/${name}/index.html`,
 		filename: `${name}.html`,
 		// favicon: './favicon.ico',
-		title: '页面名称',
-		inject: true,
+		title: '乐帮享',
+		inject: 'head',
 		hash: true, //开启hash  ?[hash]
 		chunks: chunks,
 		minify: process.env.NODE_ENV === "development" ? false : {
@@ -65,9 +65,9 @@ module.exports = {
 			ignore: ['.*']
 		}]),
 		// 消除冗余的css代码
-		new purifyCssWebpack({
-			paths: glob.sync(path.join(__dirname, "../src/pages/*/*.html"))
-		}),
+		// new purifyCssWebpack({
+		// 	paths: glob.sync(path.join(__dirname, "../src/pages/*/*.html"))
+		// }),
 
 	]
 }
